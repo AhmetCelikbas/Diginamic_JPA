@@ -5,6 +5,7 @@ import static spark.Spark.get;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.ahmetcelikbas.jpa.models.Client;
 
 import freemarker.template.Configuration;
 import freemarker.template.Version;
@@ -24,6 +25,7 @@ public class Router implements SparkApplication {
 			Map<String, Object> attributes = new HashMap<>();
 			
 			attributes.put("VAR_NAME", "Hello World!");
+			Client client = Database.find(Client.class, 1);
 			
 			return new ModelAndView(attributes, "home.ftl");
 		}, getFreeMarkerEngine());
