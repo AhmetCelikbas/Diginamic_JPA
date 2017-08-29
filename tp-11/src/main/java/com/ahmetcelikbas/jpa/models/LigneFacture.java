@@ -3,6 +3,7 @@
  */
 package com.ahmetcelikbas.jpa.models;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -29,11 +30,13 @@ public class LigneFacture {
 	/**
 	 * int nombreArticle
 	 */
+	@Column
 	private int nombreArticle;
 	
 	/**
 	 * double total
 	 */
+	@Column
 	private double total;
 	
 	/**

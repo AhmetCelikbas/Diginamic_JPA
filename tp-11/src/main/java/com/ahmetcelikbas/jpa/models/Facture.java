@@ -6,6 +6,7 @@ package com.ahmetcelikbas.jpa.models;
 import java.util.Date;
 import java.util.Set;
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -34,16 +35,19 @@ public class Facture {
 	/**
 	 * Date date
 	 */
+	@Column
 	private Date date;
 	
 	/**
 	 * String status
 	 */
+	@Column
 	private StatusFacture status;
 	
 	/**
 	 * double total
 	 */
+	@Column
 	private double total;
 	
 	/**

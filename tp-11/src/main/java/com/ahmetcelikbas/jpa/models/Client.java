@@ -6,6 +6,7 @@ package com.ahmetcelikbas.jpa.models;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -32,11 +33,13 @@ public class Client {
 	/**
 	 * String nom
 	 */
+	@Column
 	private String nom;
 	
 	/**
 	 * String prenom
 	 */
+	@Column
 	private String prenom;
 	
 	/**

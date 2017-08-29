@@ -37,7 +37,6 @@ public class Article {
 	/**
 	 * ArticleDescription articleDescription
 	 */
-	@Column
 	@OneToOne
 	private ArticleDescription articleDescription;
 

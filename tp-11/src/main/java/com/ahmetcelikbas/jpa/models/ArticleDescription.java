@@ -41,7 +41,6 @@ public class ArticleDescription {
 	/**
 	 * Article article
 	 */
-	@Column
 	@OneToOne(mappedBy="articleDescription")
 	private Article article;
 
