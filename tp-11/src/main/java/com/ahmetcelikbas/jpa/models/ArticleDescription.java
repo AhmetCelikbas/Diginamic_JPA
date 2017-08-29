@@ -77,19 +77,6 @@ public class ArticleDescription {
 		this.description = description;
 	}
 
-	/**
-	 * @return the article
-	 */
-	public Article getArticle() {
-		return article;
-	}
-
-	/**
-	 * @param article the article to set
-	 */
-	public void setArticle(Article article) {
-		this.article = article;
-	}
 
 	/**
 	 * @return the idArticleDescription
