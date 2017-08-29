@@ -3,6 +3,7 @@
  */
 package com.ahmetcelikbas.jpa.models;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -28,18 +29,75 @@ public class ArticleDescription {
 	/**
 	 * String nom
 	 */
-	@SuppressWarnings("unused")
+	@Column
 	private String nom;
 	
 	/**
 	 * String description
 	 */
-	@SuppressWarnings("unused")
+	@Column
 	private String description;
 	
 	/**
 	 * Article article
 	 */
+	@Column
 	@OneToOne(mappedBy="articleDescription")
 	private Article article;
+
+
+	
+	/* GETTERS @ SETTERS */
+	
+	/**
+	 * @return the nom
+	 */
+	public String getNom() {
+		return nom;
+	}
+
+	/**
+	 * @param nom the nom to set
+	 */
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	/**
+	 * @return the description
+	 */
+	public String getDescription() {
+		return description;
+	}
+
+	/**
+	 * @param description the description to set
+	 */
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	/**
+	 * @return the article
+	 */
+	public Article getArticle() {
+		return article;
+	}
+
+	/**
+	 * @param article the article to set
+	 */
+	public void setArticle(Article article) {
+		this.article = article;
+	}
+
+	/**
+	 * @return the idArticleDescription
+	 */
+	public int getIdArticleDescription() {
+		return idArticleDescription;
+	}
+	
+	
+	
 }

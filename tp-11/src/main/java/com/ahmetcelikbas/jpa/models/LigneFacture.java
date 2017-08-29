@@ -29,13 +29,11 @@ public class LigneFacture {
 	/**
 	 * int nombreArticle
 	 */
-	@SuppressWarnings("unused")
 	private int nombreArticle;
 	
 	/**
 	 * double total
 	 */
-	@SuppressWarnings("unused")
 	private double total;
 	
 	/**
@@ -46,4 +44,77 @@ public class LigneFacture {
 	
 	@OneToOne
 	private Article article;
+
+	
+	/* GETTERS @ SETTERS */
+	
+	
+	/**
+	 * @return the nombreArticle
+	 */
+	public int getNombreArticle() {
+		return nombreArticle;
+	}
+
+	/**
+	 * @param nombreArticle the nombreArticle to set
+	 */
+	public void setNombreArticle(int nombreArticle) {
+		this.nombreArticle = nombreArticle;
+	}
+
+	/**
+	 * @return the total
+	 */
+	public double getTotal() {
+		return total;
+	}
+
+	/**
+	 * @param total the total to set
+	 */
+	public void setTotal(double total) {
+		this.total = total;
+	}
+
+	/**
+	 * @return the facture
+	 */
+	public Facture getFacture() {
+		return facture;
+	}
+
+	/**
+	 * @param facture the facture to set
+	 */
+	public void setFacture(Facture facture) {
+		this.facture = facture;
+	}
+
+	/**
+	 * @return the article
+	 */
+	public Article getArticle() {
+		return article;
+	}
+
+	/**
+	 * @param article the article to set
+	 */
+	public void setArticle(Article article) {
+		this.article = article;
+	}
+
+	/**
+	 * @return the idLigneFacture
+	 */
+	public int getIdLigneFacture() {
+		return idLigneFacture;
+	}
+	
+	
+	
+	
+	
+	
 }
