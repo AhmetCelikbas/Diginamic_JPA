@@ -150,34 +150,6 @@ public class Adresse {
 	}
 
 	/**
-	 * @return the adresseLivraison
-	 */
-	public Client getAdresseLivraison() {
-		return adresseLivraison;
-	}
-
-	/**
-	 * @param adresseLivraison the adresseLivraison to set
-	 */
-	public void setAdresseLivraison(Client adresseLivraison) {
-		this.adresseLivraison = adresseLivraison;
-	}
-
-	/**
-	 * @return the adresseFacturation
-	 */
-	public Client getAdresseFacturation() {
-		return adresseFacturation;
-	}
-
-	/**
-	 * @param adresseFacturation the adresseFacturation to set
-	 */
-	public void setAdresseFacturation(Client adresseFacturation) {
-		this.adresseFacturation = adresseFacturation;
-	}
-
-	/**
 	 * @return the idAdresse
 	 */
 	public int getIdAdresse() {
